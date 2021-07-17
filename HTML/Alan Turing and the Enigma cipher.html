@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Alan Turing and the Enigma cipher</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+
+
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Dr+Sugiyama|Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/ihover.css">
+  <link rel="stylesheet" type="text/css" href="css/apolloeffect.css"/>
+  <link rel="stylesheet" type="text/css" href="css/bubbaeffect.css"/>
+
+  <script src="js/modernizr-2.7.1.js"></script>
+  
+<style>
+.collapsible {
+  background-color: #005361;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
+
+  
+</head>
+
+<body>
+	
+	
+	<!--Move to top-->
+	<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <div class="navbar navbar-inverse navbar-static-top" id="scrollspy" style="position: fixed;width: 100%;
+																 background: linear-gradient(
+																 rgba(0,32,38, 0.7), 
+																 rgba(20,20,20, 0.7));">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand"><img src="img/alan.png" style="opacity:0.9;"alt="Logo"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="menu"><a href="#header">Home</a></li>
+            <li class="menu"><a href="#Enigma">Enigma Machine</a></li>
+            <li class="menu"><a href="#Alan">Alan Turing</a></li>
+			<li class="menu" id="toggle"><a href="#message">Breaking Enigma</a>
+			<div class="dropdown-content">
+			    <a href="#Bletchley">Bletchley Park</a>
+				<a href="#Bombe">Bombe</a>
+				<a href="#BombeTypes">British Bombe Types</a>
+				</div>
+				</div>
+			</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	
+	<!--Video background-->
+	<video autoplay muted loop id="myVideo">
+	<source src="img/bletchleypark.mp4" type="video/mp4">
+	</video>
+
+    <!--Header-->
+    <section id="header">
+      <div class="container">
+        <div class="row header-text">
+          <div class="col-sm-8 pull-right text-right">
+           <div class="margin-100">
+            <h1>Alan Turing and the Enigma cipher,</h1>
+            <h3>A product of <strong><em>Introduce of Computing</em></strong> course.</h3>
+           </div>
+           <a style="text-shadow: 0px 0px #000000;" href="#header" class="btn btn-primary btn-lg">Group: Enigma</a>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-4 text-center wow fadeInUp">
+           
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    
+    <!--Enigma Machine-->
+    <section id="main1">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 margin-30">
+            <h2 style="color:#ffffff" id="Enigma">Enigma Machine</h2><br />
+            <p style="color:#ffffff">Enigma German machine was supplied with 26 buttons indicating all alphabetical signsand used a scheme that was quite similar to what we call QWERTY. </p>
+			<br />
+            <br />
+			<button class="collapsible">Overview of Structure</button>
+				<div class="content">
+				<br />
+				<p>Inside the box, the system is built around three physical rotors. Each takes in a letterand outputs it as a different  one. That letter passes through all three rotors, bouncesoff a “reflector” at the end, and passes back through all three rotors in the other direction.</p>
+				</div>
+             <br />
+			<button class="collapsible">How Is Working</button>
+				<div class="content">
+				<br />
+				<p>When the first rotor has turned through all 26 positions, the second rotor clicks round, and when that’s made it round all the way, the third does the same, leading to more than 17,000 different combinations before the encryption process repeats itself.</p>
+				</div>
+				     <br />
+			<button class="collapsible">Details of the Mechanic</button>
+				<div class="content">
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+				<img class="header-img" src="img/mechanic.jpg" width="100%" height="100%" alt="Main2 Image">
+				</div>
+          </div>
+          
+          <div class="col-sm-6 wow fadeInUpBig">
+            <img class="main1-img img-responsive pull-right" src="img/enigma.png" alt="Main1 Image">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--Alan Turing-->
+    <section id="main2">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-sm-6 wow fadeInUpBig" style="width:300px;height:500px;overflow:hidden;">
+            <img class="main2-img pull-left" src="img/alan.jpg" width="500px" height="auto" alt="Main2 Image">
+          </div>
+       
+          <div class="col-sm-6 margin-30">
+            <h2 id="Alan">Alan Turing</h2><br />
+            <p>Alan Turing, in full Alan Mathison Turing (born June 23, 1912, London, England—died June 7, 1954, Wilmslow, Cheshire) is an mathematician and logician, who made major contributions to the victory of Allied against Nazis during WWII, the area of mathematics, cryptanalysis, logic, philosophy and also the new ones later known as computer science, cognitive science and artificial intelligence.</p><br />
+            
+            <br />  
+			<br />
+		
+			 <section class="effect effect-c">
+			<p class="effect__heading">“If he is to be solely a Scientific Specialist, he is wasting his time at a Public School.” </p>
+			<p class="effect__subheading">Alan Turing's headmaster, Sherborne School</p>
+			</section>
+				
+          </div>
+			
+        </div>
+      </div>
+    </section>
+    
+    <!--Break time-->
+    <section id="message">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+		  <div class="grid">
+          <figure class="effect-apollo">
+						<img src="img/break.png" alt="Break time"/>
+						<figcaption>
+							<h2>Breaking <span>Enigma</span></h2>
+							<p>The Greatest Triupmh of Allied</p>
+							
+						</figcaption>			
+					</figure>
+					</div>
+					</div>
+					</div>
+					</div>
+    </section>
+					
+	
+	
+	<!--Bletchley Park -->
+	<section id="main1" style="background: linear-gradient(
+											rgba(20,20,20, .5), 
+											rgba(20,20,20, .5)),
+											url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bletchley_Park_Mansion.jpg/1920px-Bletchley_Park_Mansion.jpg');
+											opacity: 0.95;
+											background-position: center;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 margin-30" id="bletchley" style="background-color: rgb(0, 0, 0);
+																 background-color: rgba(0, 0, 0, 0.8);
+																 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";">
+            <h2 style="color:#ffffff" id="Bletchley">Bletchley Park</h2><br />
+			<p style="color:#ffffff">On the first day of war, at the beginning of September 1939, Turing took up residence at Bletchley Park, the ugly  mansion that served as the wartime HQ of Britain's top codebreakers.
+				<br />
+				<br />
+				There he was being treated as a burdensome freak at first but later then became a key player in the battle to decrypt the coded messages generated by Enigma, the German military's typewriter-like cipher machine.
+				<br />
+				<br />
+				A secret operation, known as <b>Ultra</b>, had been founded and leaded by Alan Turing and his fellow - Britain's most valuable code-breakers (1941 - 1945).</p>
+			</div>
+			
+			<div class="col-sm-6">
+              <div class="ih-item square colored effect9 left_to_right" style="height:80%;width:80%"><a href="#">
+				<div class="img"><img src="img/bombe.jpg" alt="Main2 Image"></div>
+				<div class="info">
+				<div class="info-back">
+				<h3>Bombe Machine</h3>
+				<p>The team's operation revolves around the Bombe machine - known to be the greatest nemesis German Enigma cipher.</p>
+				<img src="img/enigma.jpg" style="width:55%;height:auto;box-shadow: 5px 5px #000000;" alt="Main3 Image"/>
+          </div>
+        </div></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+
+	<!--Bombe-->
+    <section id="main1">
+      <div class="container">
+        <div class="row">
+          
+   
+          <div class="col-sm-6 margin-30">
+            <h2 id="Alan" style="color:#ffffff;">Bombe</h2><br />
+            <p style="color:#ffffff;">In May 1940, Germans changed the indicator system and made all the perforated sheets useless, leading the British to develop new solutions. At this time Turing had already started constructing the bombe which completely changed the course of war.<br />
+			<br />
+			To decipher Enigma message codebreakers needed four factors – rotors, Ringstellung, plugboard connections, indicator-setting. Turing was not able to face his problem so he was helped by experienced constructors.
+			</p>
+            <br />  
+			<button class="collapsible">Components of Bombe</button>
+				<div class="content">
+				<br />
+				<p>"The bombe weighed about one ton, was housed in a bronze-coloured metal cabinet about 7 feet wide, 6 feet 6 inches tall and 2 feet deep and was mounted on castors. Protruding from the front of the cabinet there were 108  shafts (more in some models, fewer in the two prototypes) arranged in three 12 x 3 arrays on which drums were mounted”<br /> <cite>>Graham Ellsbury</cite></p>
+				<br />
+				<img src="img/bombedetail.jpg" alt="Main2 Image" style="width:100%;height:auto;">
+				<br />
+				</div>	
+          </div>
+		  
+		  <div class="col-sm-6" id="Bombe" style="margin-right: -100px;margin-top: -70px;overflow:hidden;">
+				<div class="grid">
+					<figure class="effect-bubba" style="box-shadow: 50px 50px 25px rgba(0, 0, 0, 0.8);">
+						<img src="img/bombe2.jpg" alt="Main2 Image"/>
+						<figcaption>
+							<h2 style="color:#ffffff;text-shadow: 1px 1px #000000;">BOMBE <span>MACHINE</span></h2>
+							<p style="color:#ffffff;font-size:14px;">Wartime picture of Bletchley Park Bombe machine named Victory.</p>
+						</figcaption>			
+					</figure>
+					</div>
+          </div>
+        </div>
+      </div>
+    </section>
+	
+	<!--Bombe Types-->
+	<section id="main2" style="background: linear-gradient(
+											rgba(31,39,57, 1), 
+											rgba(31,39,57, 1));
+											opacity: 0.9;">
+											
+      <div class="container" id="BombeTypes">
+        
+          
+         
+			<table class="tablebtl" style="height:100%;width:100%;margin: 0 auto;margin-top: -100px;">
+	<thead>
+		<tr>
+			<th><h3 style=" font-weight: bold;font-size: 1.5em;text-align: left;color: #fff842;font-family: 'Lato', sans-serif;">Types of Bombe</h3></th>
+			<th><h3 style=" font-weight: bold;font-size: 1.5em;text-align: left;color: #fff842;font-family: 'Lato', sans-serif;">Number of Enigma-equivalents</h3></th>
+			<th><h3 style=" font-weight: bold;font-size: 1.5em;text-align: left;color: #fff842;font-family: 'Lato', sans-serif;">Mechanism</h3></th>
+			<th><h3 style=" font-weight: bold;font-size: 1.5em;text-align: left;color: #fff842;font-family: 'Lato', sans-serif;">Number built</h3></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Original standard</td>
+			<td>36</td>
+			<td>3-rotor Enigma-equivalents</td>
+			<td>73</td>
+		</tr>
+		<tr>
+			<td>Jumbo</td>
+			<td>36</td>
+			<td>3-rotor Enigma-equivalents plus an additional mechanism<br />to check each stop and print the results</td>
+			<td>14</td>
+		</tr>
+		<tr>
+			<td>Mammoth</td>
+			<td>36</td>
+			<td>4-rotor Enigma-equivalents with high-speed relays to sense stops</td>
+			<td>57</td>
+		</tr>
+    <tr>
+			<td>Cobra</td>
+			<td>36</td>
+			<td>4-rotor Enigma-equivalents with an electronic sensing unit<br />designed by C.E. Wynn-Williams and Tommy Flowers’ team<br />at the GPO Research Station (this machine was unreliable)</td>
+			<td>12</td>
+		</tr>
+    <tr>
+			<td>New standard</td>
+			<td>36</td>
+			<td>3-rotor Enigma-equivalents (with high-speed Siemens-type sense relays)</td>
+			<td>68</td>
+		</tr>
+	</tbody>
+</table>
+			
+        
+      </div>
+    </section>
+	
+	 <!--Bottom-->
+    <section id="bottom">
+      <div class="container">
+        
+        <div class="row margin-30">
+          <div class="col-sm-12 text-center">
+		  <h2 style="margin-top: -100px;">Discussion</h2>
+		  <br />
+		  <br />
+		  </div>
+		  <div class="col-sm-6 text-justify">
+            <ul class="list-inline social">
+              <li class="wow slideInLeft" data-wow-delay="0.3s"><p>The history of Enigma operation for many years could not be openly told. Many efforts of many nations were not wasted – their involvement, devotion (usually underestimated) laid a groundwork for the allies’ victory. It could not have been achieved without researches conducted by Polish Cipher Bureau comma and many less prominent scientists who anonymously worked behind the scene although they also were crucial part of the codebreaking team.</p></li>
+            </ul>
+          </div>
+		  <div class="col-sm-6 text-justify">
+			<ul class="list-inline social">
+			  <li class="wow slideInRight" data-wow-delay="0.3s"><p>In 1952, Alan Turing was arrested for homosexuality – which was then illegal in Britain. He was found guilty of ‘gross indecency’ (this conviction was overturned in 2013) but avoided a prison sentence by accepting chemical castration. In 1954, he was found deadfrom cyanide poisoning.<br />An inquest ruled that it was suicide.</p></li>
+		  </ul>
+		  </div>
+		  <div class="col-sm-12 text-center" style="margin-bottom: -200px;margin-top: 50px;">
+		  <ul class="list-inline social">
+		  <li class="wow slideInRight" data-wow-delay="0.3"s><p>The legacy of Alan Turing’s life and work did not fully come to light until long after his death. His impact on computer science has been widely acknowledged: the annual ‘Turing Award’ has been the highest accolade in that industry since 1966. But the work of Bletchley Park – and Turing’s role there in cracking the Enigma code – was kept secret until the 1970s, and the full story was not known until the 1990s.<br />It has been estimated that the efforts of Turing and his fellow code-breakers shortened the war by several years. What is certain is that they saved countless lives and helped to determine the course and outcome of the conflict.</p></li>
+        </div>
+         
+      </div>
+    </section>
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p>Alan Turing and the Enigma cipher.</p>
+			<p><small>Đoàn Anh Tiến & Nguyễn Lê Phú Hòa</small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+ 
+    <!-- Javascript -->
+   
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    
+	<!--Scroll to top button-->
+	<script>
+	$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        
+        $('#return-to-top').fadeIn(200);    
+    } else {
+        $('#return-to-top').fadeOut(200);   
+    }
+	});
+	$('#return-to-top').click(function() {    
+    $('body,html').animate({
+        scrollTop : 0                       
+    }, 500);
+	});
+	</script>
+	
+	
+	<!--Smooth href-->
+	<script>
+	var $root = $('html, body');
+	$("a[href^='#']").click(function(e) {
+	e.preventDefault();
+	
+	var position = $($.attr(this, 'href')).offset().top;
+
+	$root.animate({
+		scrollTop: position - ( $(window).height() - $(this).outerHeight(true) ) / 2.5
+	}, /*speed*/);
+});
+	</script>
+	
+	<!--Scrollspy nè-->
+	<script>
+	$("#scrollspy").scrollspy({ offset: 0});
+	</script>
+	
+	<!---Split effect nè-->
+
+
+	
+	<!--Collapsible-->
+    <script>
+      new WOW().init();
+    </script>
+	
+	<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+    <!-- Du phong 
+	<section id="message">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h2 class="white">Breaking the Enigma</h2>
+            <a href="#" class="btn btn-primary btn-lg">The Greatest Triupmh of Allied</i></a>
+          </div>
+        </div>
+      </div>
+    </section> 
+	-->
+   
+    </body>
+</html>
